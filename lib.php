@@ -49,6 +49,8 @@ function local_create_user($user) {
     $user->auth = 'manual';
     $user->policyagreed = 1;
     $user->confirmed = 1;
+    $user->deleted = 0;
+    $user->trackforums = 0;
     $user->password = hash_internal_user_password($user->password, true);
     $user->id = $DB->insert_record('user', $user);
 
