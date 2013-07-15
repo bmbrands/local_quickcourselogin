@@ -16,13 +16,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Moodle form
+ * Quick Course Login
  *
- * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
- * @copyright
- * @package
- * @subpackage
- * @author
+ * This module has been created to provide a quick and easy way of loggin into a course
+ *
+ * @package    local
+ * @subpackage quickcourselogin
+ * @copyright  2013 Bas Brands, www.basbrands.nl
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();

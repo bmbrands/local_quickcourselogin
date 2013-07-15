@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Progress Report
+ * Quick Course Login
  *
  * This module has been created to provide a quick and easy way of loggin into a course
  *
