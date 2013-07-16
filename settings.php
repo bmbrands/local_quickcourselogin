@@ -32,6 +32,20 @@ if ($hassiteconfig) {
     $setting = new admin_setting_configselect($name, $title, $description, 4, $courses_chosen);
     $settings ->add($setting);
 
+    $name = 'local_quickcourselogin/default_country';
+    $title = get_string('country');
+    $description = get_string('country_desc','local_quickcourselogin');
+    $country = get_string_manager()->get_list_of_countries();
+    $default_country[''] = get_string('selectacountry');
+    $country = array_merge($default_country, $country);
+    $setting = new admin_setting_configselect($name, $title, $description, 4, $country);
+    $settings ->add($setting);
+
+    $name = 'local_quickcourselogin/default_city';
+    $title = get_string('city');
+    $description = get_string('city_desc','local_quickcourselogin');
+    $setting = new admin_setting_configtext($name, $title, $description, 'NONE');
+    $settings ->add($setting);
 
 }
 

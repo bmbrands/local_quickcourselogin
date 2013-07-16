@@ -39,12 +39,17 @@ function local_create_user($user) {
         return;
     }
 
+    $default_country = get_config('local_quickcourselogin','default_country');
+    $default_city = get_config('local_quickcourselogin','default_city');
+
     $user->timemodified = time();
     $user->timecreated  = time();
     $user->firstaccess  = time();
     $user->lastaccess  = time();
     $user->lastlogin  = time();
     $user->currentlogin = time();
+    $user->city = $default_city;
+    $user->country = $default_country;
     $user->mnethostid   = $CFG->mnet_localhost_id;
     $user->auth = 'manual';
     $user->policyagreed = 1;
